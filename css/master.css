@@ -6,11 +6,19 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
 }
 
+.logo {
+    max-width: 260px;
+}
+
 .main-header {
     position: relative;
     min-height: 30vh;
     aspect-ratio: 16/6;
     overflow: hidden;
+}
+
+.small-font {
+    font-size: 0.8em;
 }
 
 .background {
@@ -53,6 +61,7 @@ body {
     height: 95%;
     width: 100%;
     position: relative;
+    min-height: 400px;
 
 }
 
@@ -75,6 +84,10 @@ body {
     border: none!important;
 }
 
+.btn-secondary {
+    border: none!important;
+}
+
 hr {
     height: 3px !important;
     opacity: 100% !important;
@@ -85,4 +98,11 @@ hr {
 .card-icon { 
     font-size: 5em;
     color: var(--main-grey);
+}
+
+.cookiealert {
+    background: none!important;
+    background-color: var(--main-secondary)!important;
+    color: var(--text)!important;
+    font-weight: 300!important;
 }
