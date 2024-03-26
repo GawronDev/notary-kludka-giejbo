@@ -74,3 +74,15 @@ body {
     background-color: var(--main-accent)!important;
     border: none!important;
 }
+
+hr {
+    height: 3px !important;
+    opacity: 100% !important;
+    background-color: var(--main-accent) !important;
+    border-top: none!important;
+}
+
+.card-icon { 
+    font-size: 5em;
+    color: var(--main-grey);
+}
