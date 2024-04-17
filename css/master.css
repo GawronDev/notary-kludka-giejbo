@@ -12,9 +12,15 @@ body {
 
 .main-header {
     position: relative;
-    min-height: 30vh;
-    aspect-ratio: 16/6;
     overflow: hidden;
+}
+
+.accent-number {
+    color: var(--main-accent);
+}
+
+footer {
+    background-color: var(--main-secondary);
 }
 
 .small-font {

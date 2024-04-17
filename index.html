@@ -19,13 +19,17 @@
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script defer>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" id="nav">
         <div class="container-fluid px-lg-4">
             <a class="navbar-brand" href="#">
-                <img class="logo" src="./images/logo.png" alt="Logo kancelarii notarialnej" />
+                <img class="logo" src="./images/logo.png" alt="Logo kancelarii notarialnej 1" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#kancelaria">Kancelaria</a>
+                        <a class="nav-link" href="#kancelaria">Kancelaria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#kontakt">Kontakt</a>
@@ -46,20 +50,21 @@
                         <a class="nav-link" href="#oferta">Czynności notarialne</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Informacje</a>
+                        <a class="nav-link" href="#informacje">Informacje</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid main-header mb-5">
-        <div class="row h-100">
+    <div class="container-fluid main-header py-5">
+        <div class="row">
             <div class="col-md-12 col-lg-9 col-xl-8 col-xxl-6 mx-auto d-flex align-items-center">
-                <div class="d-flex">
+                <div class="d-flex py-5">
                     <div class="vr me-4">
                     </div>
                     <div>
+                        <i class="fs-3 text-light text-shadow">Pewność i bezpieczeństwo obrotu.</i>
                         <h1 class="display-2 text-light fw-bold text-shadow">
                             Kancelaria Notarialna w
                             <br />
@@ -73,10 +78,12 @@
                                 66-400 Gorzów Wielkopolski
                             </span>
                             <span>
-                                tel. 95 737 00 20, 95 737 00 22
+                                tel. <a class="link-light" href="tel:957370020">95 737 00 20</a>,
+                                <a class="link-light" href="tel:957370022">95 737 00 22</a>
                             </span>
                             <span>
-                                kancelaria@notariusz-gorzow.pl
+                                <a class="link-light"
+                                    href="mailto:kancelaria@notariusz-gorzow.pl">kancelaria@notariusz-gorzow.pl</a>
                             </span>
                         </div>
                     </div>
@@ -88,17 +95,17 @@
         </div>
     </div>
 
-    <div class="container-fluid  px-lg-4 my-5">
+    <div class="container-fluid  px-lg-4 my-5" id="kancelaria">
         <div class="d-flex mb-3 align-items-center">
             <div class="vr me-2">
             </div>
-            <h2 class="display-4 fw-bold mb-0" id="kancelaria">
+            <h2 class="display-4 fw-bold mb-0">
                 Kancelaria
             </h2>
         </div>
         <div class="row">
             <div class="col-12 col-lg-6">
-                <p class="w-75 mb-5">
+                <p class="w-lg-75 mb-5">
                     Kancelaria notariusz Katarzyny Kłudki-Giejbo położona jest w centrum miasta na parterze w kamienicy
                     przy ul. Kosynierów Gdyńskich 107 w Gorzowie Wlkp. W najbliższym otoczeniu mieści się Wojewódzka
                     Biblioteka Publiczna im. Zbigniewa Herberta oraz Lubuskie Centrum Przedsiębiorczości (Zachodnia Izba
@@ -110,11 +117,11 @@
 
                 <b class="fs-4">Godziny urzędowania:</b>
                 <div class="row row-cols-2 mb-4 mt-1">
-                    <div class="col">Poniedziałek, Wtorek, Czwartek, Piątek</div>
-                    <div class="col">9:00 - 16:00</div>
+                    <div class="col mb-2">Poniedziałek, Wtorek, Czwartek, Piątek</div>
+                    <div class="col text-lg-start text-end">9:00 - 16:00</div>
 
                     <div class="col">Środa</div>
-                    <div class="col">9:00 - 18:00</div>
+                    <div class="col text-lg-start text-end">9:00 - 18:00</div>
 
                 </div>
                 <p class="text-body-secondary w-75 small-font mb-3">
@@ -139,11 +146,11 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid px-lg-4 my-5">
+    <div class="container-fluid px-lg-4 my-5" id="kontakt">
         <div class="d-flex mb-3 align-items-center">
             <div class="vr me-2">
             </div>
-            <h2 class="display-4 fw-bold mb-0" id="kontakt">
+            <h2 class="display-4 fw-bold mb-0">
                 Kontakt
             </h2>
         </div>
@@ -161,24 +168,25 @@
                     <div class="col">
                         <b>Telefon:</b>
                         <p>
-                            95 737 00 20
+                            <a class="link-dark" href="tel:957370020">95 737 00 20</a>
                             <br />
-                            95 737 00 22
+                            <a class="link-dark" href="tel:957370020">95 737 00 22</a>
                         </p>
                     </div>
                     <div class="col">
                         <b>Email:</b>
                         <p>
-                            kancelaria@notariusz-gorzow.pl
+                            <a class="link-dark"
+                                href="mailto:kancelaria@notariusz-gorzow.pl">kancelaria@notariusz-gorzow.pl</a>
                         </p>
                     </div>
                     <div class="col">
                         <b>Numer NIP:</b>
-                        <p>123456789</p>
+                        <p>5992689271</p>
                     </div>
                     <div class="col">
                         <b>Numer REGON:</b>
-                        <p>123456789</p>
+                        <p>080280840</p>
                     </div>
                 </div>
             </div>
@@ -197,11 +205,11 @@
         </div>
     </div>
 
-    <div class="container-fluid  px-lg-4 my-5">
+    <div class="container-fluid  px-lg-4 my-5" id="onas">
         <div class="d-flex mb-3 align-items-center">
             <div class="vr me-2">
             </div>
-            <h2 class="display-4 fw-bold mb-0 " id="onas">
+            <h2 class="display-4 fw-bold mb-0">
                 O nas
             </h2>
         </div>
@@ -267,121 +275,314 @@
     </div>
 
 
-    <div class="container-fluid px-lg-4 my-5">
+    <div class="container-fluid px-lg-4 my-5" id="oferta">
         <div class="d-flex mb-3 align-items-center">
             <div class="vr me-2">
             </div>
-            <h2 class="display-4 fw-bold mb-0" id="oferta">
+            <h2 class="display-4 fw-bold mb-0">
                 Czynności notarialne
             </h2>
         </div>
 
         <div class="row">
             <div class="col-lg-3 col-sm-6 mb-3">
-                <div class="card d-flex justify-content-center align-items-center bg-light shadow-sm">
+                <div class="card d-flex align-items-center bg-light shadow-sm p-2 h-100">
                     <i class="card-icon bi bi-house-fill"></i>
-                    <h5 class="fs-3 fw-light mb-0 text-center">Obrót nieruchomościami</h5>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Nieruchomości</h5>
                     <hr class="w-50" />
                     <p class="text-center">
-                        sprzedaż, darowizna, zamiana, umowa o dożywocie, najem okazjonalny, spółdzielnie mieszkaniowe,
+                        sprzedaż, darowizna, zamiana, dożywocie, zniesienie współwłasności
+                        hipoteka, służebność,
+                        umowa deweloperska, umowa ustanowienia odrębnej własności lokalu, wnioski o wpis w księdze
+                        wieczystej
                     </p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6 mb-3">
-                <div class="card d-flex justify-content-center align-items-center bg-light shadow-sm">
-                    <i class="card-icon bi bi-house-fill"></i>
-                    <h5 class="fs-3 fw-light mb-0 text-center">Obrót nieruchomościami</h5>
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-people-fill"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Rodzina</h5>
                     <hr class="w-50" />
                     <p class="text-center">
-                        sprzedaż, darowizna, zamiana, umowa o dożywocie, najem okazjonalny, spółdzielnie mieszkaniowe,
+                        umowa majątkowa małżeńska, podział majątku wspólnego
                     </p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6 mb-3">
-                <div class="card d-flex justify-content-center align-items-center bg-light shadow-sm">
-                    <i class="card-icon bi bi-house-fill"></i>
-                    <h5 class="fs-3 fw-light mb-0 text-center">Obrót nieruchomościami</h5>
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-folder-fill"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Spadek</h5>
                     <hr class="w-50" />
                     <p class="text-center">
-                        sprzedaż, darowizna, zamiana, umowa o dożywocie, najem okazjonalny, spółdzielnie mieszkaniowe,
+                        odrzucenie lub przyjęcie spadku
+                        testament, zrzeczenie się dziedziczenia
+                        poświadczenie dziedziczenia, spis wykaz inwentarza
+                        dział spadku
+
                     </p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6 mb-3">
-                <div class="card d-flex justify-content-center align-items-center bg-light shadow-sm">
-                    <i class="card-icon bi bi-house-fill"></i>
-                    <h5 class="fs-3 fw-light mb-0 text-center">Obrót nieruchomościami</h5>
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-briefcase-fill"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Firma</h5>
                     <hr class="w-50" />
                     <p class="text-center">
-                        sprzedaż, darowizna, zamiana, umowa o dożywocie, najem okazjonalny, spółdzielnie mieszkaniowe,
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 mb-3">
-                <div class="card d-flex justify-content-center align-items-center bg-light shadow-sm">
-                    <i class="card-icon bi bi-house-fill"></i>
-                    <h5 class="fs-3 fw-light mb-0 text-center">Obrót nieruchomościami</h5>
-                    <hr class="w-50" />
-                    <p class="text-center">
-                        sprzedaż, darowizna, zamiana, umowa o dożywocie, najem okazjonalny, spółdzielnie mieszkaniowe,
+                        spółki prawa handlowego i cywilnego
+                        przedsiębiorcy, zarząd sukcesyjny
+                        przekształcenia
                     </p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6 mb-3">
-                <div class="card d-flex justify-content-center align-items-center bg-light shadow-sm">
-                    <i class="card-icon bi bi-house-fill"></i>
-                    <h5 class="fs-3 fw-light mb-0 text-center">Obrót nieruchomościami</h5>
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-person-fill-check"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Pełnomocnictwa</h5>
                     <hr class="w-50" />
                     <p class="text-center">
-                        sprzedaż, darowizna, zamiana, umowa o dożywocie, najem okazjonalny, spółdzielnie mieszkaniowe,
+                        spółki prawa handlowego i cywilnego
+                        przedsiębiorcy, zarząd sukcesyjny
+                        przekształcenia
                     </p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6 mb-3">
-                <div class="card d-flex justify-content-center align-items-center bg-light shadow-sm">
-                    <i class="card-icon bi bi-house-fill"></i>
-                    <h5 class="fs-3 fw-light mb-0 text-center">Obrót nieruchomościami</h5>
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-bank2"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Depozyty</h5>
                     <hr class="w-50" />
                     <p class="text-center">
-                        sprzedaż, darowizna, zamiana, umowa o dożywocie, najem okazjonalny, spółdzielnie mieszkaniowe,
+                        środki pieniężne, dokumenty
                     </p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6 mb-3">
-                <div class="card d-flex justify-content-center align-items-center bg-light shadow-sm">
-                    <i class="card-icon bi bi-house-fill"></i>
-                    <h5 class="fs-3 fw-light mb-0 text-center">Obrót nieruchomościami</h5>
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-file-earmark-fill"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Umowy przedwstępne i Ugody</h5>
                     <hr class="w-50" />
                     <p class="text-center">
-                        sprzedaż, darowizna, zamiana, umowa o dożywocie, najem okazjonalny, spółdzielnie mieszkaniowe,
+                        zachowek, alimenty
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-file-earmark-text-fill"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Protokoły</h5>
+                    <hr class="w-50" />
+                    <p class="text-center">
+                        Spółki, wspólnoty mieszkaniowe
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-file-check-fill"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Poświadczenia</h5>
+                    <hr class="w-50" />
+                    <p class="text-center">
+                        własnoręczność podpisu
+                        zgodność odpisu, wyciągu lub kopii z okazanym dokumentem
+                        data okazania dokumentu
+                        pozostawanie przy życiu lub w określonym miejscu
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-file-arrow-up-fill"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Wypisy, odpisy i wyciągi</h5>
+                    <hr class="w-50" />
+                    <p class="text-center">
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-kanban-fill"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Projekty dokumentów</h5>
+                    <hr class="w-50" />
+                    <p class="text-center">
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card d-flex  align-items-center bg-light shadow-sm p-2 h-100">
+                    <i class="card-icon bi bi-archive-fill"></i>
+                    <h5 class="fs-3 fw-light mb-0 text-center">Rejestry Notarialne </h5>
+                    <hr class="w-50" />
+                    <p class="text-center">
+                        CREWAN, NORT, Rejestr Spadkowy, Rejestr Zarządców Sukcesyjnych
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container-fluid px-lg-4 my-5" id="informacje">
+        <div class="d-flex mb-3 align-items-center">
+            <div class="vr me-2">
+            </div>
+            <h2 class="display-4 fw-bold mb-0">
+                Informacje
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <b class=""><span class="accent-number">1.</span> Ogólne</b>
+                <p>
+                    Notariusz Katarzyna Kłudka-Giejbo jest osobą zaufania publicznego. Dokonuje zarówno czynności,
+                    którym strony są obowiązane, jak i pragną nadać formę notarialną.
+
+                    Przy dokonywaniu czynności notarialnej Notariusz jest obowiązana stwierdzić tożsamość osób
+                    biorących udział w czynności.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <b class=""><span class="accent-number">2.</span> Język</b>
+                <p>
+                    Notariusz Katarzyna Kłudka-Giejbo dokonuje czynności notarialnych w języku polskim. Jeżeli osoba
+                    biorąca udział w czynności nie zna języka polskiego, sporządzenie aktu notarialnego będzie
+                    wymagało obecności tłumacza przysięgłego. Wcześniejsze umówienie czynności notarialnej i
+                    uzyskanie niezbędnych informacji możliwe jest w języku niemieckim lub angielskim.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <b class=""><span class="accent-number">3.</span> Podatek</b>
+                <p>
+                    Notariusz pobiera podatek od czynności cywilnoprawnych, podatek od spadków i darowizn oraz
+                    opłatę sądową.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <b class=""><span class="accent-number">4.</span> Zastępca</b>
+                <p>
+                    W Kancelarii czynności notarialnych może dokonywać również zastępująca notariusz Katarzynę
+                    Kłudkę-Giejbo zastępca notarialny Marta Kraska.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <b class=""><span class="accent-number">5.</span> Archiwizacja dokumentów</b>
+                <p>
+                    Dokumenty obejmujące dokonane czynności
+                    notarialne Notariusz Katarzyna Kłudka-Giejbo sukcesywnie przekazuje na przechowanie do archiwum
+                    ksiąg wieczystych Sądu Rejonowego w Gorzowie Wlkp. po upływie 10 lat od ich sporządzenia.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <b class=""><span class="accent-number">6.</span> Rejestracja notariuszy</b>
+                <p>
+                    Rejestr Kancelarii Notarialnych prowadzi Minister Sprawiedliwości. Prowadzenie wykazów
+                    notariuszy i zastępców notarialnych z okręgu Sądu Apelacyjnego w Szczecinie (właściwego dla Sądu
+                    Okręgowego w Gorzowie Wlkp.) należy do zakresu działania Rady Izby Notarialnej w Szczecinie.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid py-3 px-lg-4">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="d-flex flex-column">
+                    <div>
+                        <img class="logo" src="./images/logo.png" alt="Logo kancelarii notarialnej 2" />
+                    </div>
+                    <p class="my-3">
+                        Katarzyna Kłudka-Giejbo
+                        <br />
+                        ul. Kosynierów Gdyńskich 107/2
+                        <br />
+                        66-400 Gorzów Wielkopolski
+                    <p>
+                        tel: <a class="link-dark" href="tel:957370020">95 737 00 20</a>,
+                        <a class="link-dark" href="tel:957370022">95 737 00 22</a>
+                    </p>
+                    <p>
+                        <a class="link-dark"
+                            href="mailto:kancelaria@notariusz-gorzow.pl">kancelaria@notariusz-gorzow.pl</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <h5>
+                    Linki:
+                </h5>
+                <ul>
+                    <li>
+                        <a class="link-dark" href="#kancelaria">Kancelaria</a>
+                    </li>
+                    <li>
+                        <a class="link-dark" href="#kontakt">Kontakt</a>
+                    </li>
+                    <li>
+                        <a class="link-dark" href="#onas">O nas</a>
+                    </li>
+                    <li>
+                        <a class="link-dark" href="#oferta">Czynności notarialne</a>
+                    </li>
+                    <li>
+                        <a class="link-dark" href="#informacje">Informacje</a>
+                    </li>
+                    <li>
+                        <a class="link-dark" href="polityka-prywatnosci.html">Polityka prywatności</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <h5>
+                    Tagi:
+                </h5>
+                <ul>
+                    <li>Notariusz</li>
+                    <li>Notariusz Gorzów</li>
+                    <li>Notariusz Gorzów Wielkopolski</li>
+                    <li>Kancelaria Notarialna</li>
+                    <li>Notariusz w Gorzowie</li>
+                    <li>Notariusz w Gorzowie Wielkopolskim</li>
+                    <li>Akty Notarialne Gorzów Wielkopolski</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <h5>
+                    Informacje:
+                </h5>
+                <p>
+                    Notariusz Katarzyna Kłudka-Giejbo nie posiada żadnych innych stron internetowych, w tym stron lub
+                    kont na portalach społecznościowych.
+                </p>
+            </div>
+        </div>
+    </footer>
+
     <!-- START Bootstrap-Cookie-Alert -->
     <div class="alert text-center cookiealert alert-dismissible" role="alert">
-        <b>Ta strona wykorzystuje pliki Cookies. <a
-            href="https://cookiesandyou.com/" target="_blank">Dowiedz się więcej</a>
+        <b>Ta strona wykorzystuje pliki Cookies. <a href="https://cookiesandyou.com/" target="_blank">Dowiedz się
+                więcej</a>
 
-        <button type="button" class="btn btn-primary btn-sm acceptcookies">
-            Akceptuj
-        </button>
-        
-        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="alert">
-            Anuluj
-        </button>
+            <button type="button" class="btn btn-primary btn-sm acceptcookies">
+                Akceptuj
+            </button>
+
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="alert">
+                Anuluj
+            </button>
     </div>
     <!-- END Bootstrap-Cookie-Alert -->
 
@@ -390,6 +591,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="./js/scroll.js"></script>
 </body>
 
 </html>
