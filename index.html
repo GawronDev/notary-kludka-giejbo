@@ -27,7 +27,7 @@
     <!-- <link rel="canonical" href="https://www.notariuszgorzow.pl/index.html" /> -->
     <meta name="robots" content="index,follow">
 
-    <style>
+    <!-- <style>
         body {
             --text: #130E01;
             --main-grey: #707070;
@@ -162,20 +162,13 @@
         .w-100 {
             width: 100% !important;
         }
-    </style>
+    </style> -->
 
     <!-- Custom CSS -->
-    <link rel="preload" href="./css/master.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="./css/master.min.css">
-    </noscript>
+    <link rel="stylesheet" href="./css/master.min.css">
 
     <!-- Bootstrap -->
-    <link rel="preload" href="./css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-    </noscript>
-
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- Bootstrap Cookie Alert -->
     <link rel="preload" as="stylesheet"
@@ -200,8 +193,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./images/favicon/site.webmanifest">
-
-    <script src="js/lazyloading.js" defer></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" tabindex="0">
@@ -268,8 +259,7 @@
                     </div>
                 </div>
             </div>
-            <div class="background lazy-background">
-
+            <div class="background visible">
             </div>
         </div>
     </div>
