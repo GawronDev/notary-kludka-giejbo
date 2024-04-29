@@ -14,7 +14,7 @@
         content="Notariusz, Notariusz Gorzów, Notariusz Gorzów Wielkopolski, Kancelaria Notarialna, Notariusz w Gorzowie, Notariusz w Gorzowie Wielkopolskim, Akty Notarialne Gorzów Wielkopolski">
 
     <meta name="format-detection" content="telephone=no">
-    
+
     <meta ref="author" content="Jakub Gawroński" />
     <meta property="og:type" content="website">
     <meta property="og:title" content="Strona główna Kancelarii Notarialnej Katarzyny Kłudki-Giejbo">
@@ -25,32 +25,87 @@
     <meta property="og:site_name" content="Notariusz Katarzyna Kłudka-Giejbo, Gorzów Wielkopolski">
 
     <!-- <link rel="canonical" href="https://www.notariuszgorzow.pl/index.html" /> -->
-
-    <!-- Custom CSS -->
-    <link href="./css/master.css" rel="stylesheet" />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-
-
-
     <meta name="robots" content="index,follow">
 
+    <style>
+        body {
+            --text: #130E01;
+            --main-grey: #707070;
+            --main-secondary: #F1F1F1;
+            --main-accent: #B40A1B;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        .logo {
+            max-width: 260px;
+            aspect-ratio: 583/89;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main-header {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background {
+            width: calc(100% + 20px) !important;
+            height: calc(100% + 20px) !important;
+            box-sizing: content-box;
+            left: -10px;
+            top: -10px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            position: absolute;
+            background-size: cover;
+            background-blend-mode: darken;
+            z-index: -10;
+            filter: blur(3px);
+        }
+
+        .background.visible {
+            width: calc(100% + 20px) !important;
+            height: calc(100% + 20px) !important;
+            box-sizing: content-box;
+            left: -10px;
+            top: -10px;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                url("../images/Webp/columns-comp.webp");
+            position: absolute;
+            background-size: cover;
+            background-blend-mode: darken;
+            z-index: -10;
+            filter: blur(3px);
+        }
+    </style>
+
+    <!-- Custom CSS -->
+    <link rel="preload" href="./css/master.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./css/master.min.css">
+    </noscript>
+
     <!-- Bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"
-        lazyload> -->
+    <link rel="preload" href="./css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+    </noscript>
+
 
     <!-- Bootstrap Cookie Alert -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css"
-        lazyload>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+    
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-        lazyload>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </noscript>
 
     <script defer>
         document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
-
 
     <!-- Preload large images -->
     <link rel="preload" fetchpriority="high" as="image" href="./images/Webp/columns-comp.webp" type="image/webp">
@@ -179,10 +234,11 @@
             <div class="col-12 col-lg-6">
                 <div class="d-flex w-100 h-100 flex-column">
                     <div class="img-container shadow-sm">
-                        <img loading="lazy" src="images/kancelaria-bez-znaku-bez-auta.jpg"
+                        <img loading="lazy" src="./images/Webp/kancelaria.webp"
                             alt="Zdjęcie bundynku kancelarii notariusz Katarzyny Kłudki-Giejbo" />
                     </div>
-                    <span class="main-accent h-5 small-font">| <span class="text-body-secondary">wejście do Kancelarii przy ul.
+                    <span class="main-accent h-5 small-font">| <span class="text-body-secondary">wejście do Kancelarii
+                            przy ul.
                             Kosynierów Gdyńskich 107</span></span>
                 </div>
             </div>
@@ -252,7 +308,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-6 mb-5 order-2 order-lg-1">
                         <div class="img-container shadow-sm">
-                            <img loading="lazy" src="./images/po-retuszu-5-zblizenie-bez-kosmyku.jpg"
+                            <img loading="lazy" src="./images/Webp/katarzyna-kludka-giejbo.webp"
                                 alt="Zdjęcie notariusz Katarzyny Kłudki-Giejbo" />
                         </div>
                         <span class="main-accent h-5 small-font">| <span class="text-body-secondary">Notariusz Katarzyna
@@ -286,10 +342,11 @@
                 <div class="row">
                     <div class="col-12 col-lg-6 mb-5 order-2 order-lg-1">
                         <div class="img-container shadow-sm">
-                            <img loading="lazy" src="./images/po-retuszu-1-granatowa-bluzka.jpg"
+                            <img loading="lazy" src="./images/Webp/marta-kraska.webp"
                                 alt="Zdjęcie zastępcy notariusz Marty Kraskiej" />
                         </div>
-                        <span class="main-accent h-5 small-font">| <span class="text-body-secondary">Zastępca notarialny Marta
+                        <span class="main-accent h-5 small-font">| <span class="text-body-secondary">Zastępca notarialny
+                                Marta
                                 Kraska</span></span>
                     </div>
                     <div class="col-12 col-lg-6 mb-3 order 1 order-lg-2">
@@ -565,7 +622,7 @@
         </div>
     </div>
 
-    <footer class="container-fluid py-3 px-lg-4">
+    <footer class="container-fluid py-3 px-lg-4 pb-5">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="d-flex flex-column">
@@ -582,7 +639,7 @@
                         66-400 Gorzów Wielkopolski
                         <br />
                         NIP: 5992689271
-                        <p>
+                    <p>
                         tel: <a class="link-dark" href="tel:957370020">95 737 00 20</a>,
                         <a class="link-dark" href="tel:957370022">95 737 00 22</a>
                     </p>
@@ -632,7 +689,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="img-container w-75 mx-auto mt-2">
                     <a href="https://krn.org.pl/">
-                        <img src="./images/logo-notariat-polski.png" alt="Logo Notariatu Polskiego" />
+                        <img src="./images/Webp/logo-notariat-polski.webp" alt="Logo Notariatu Polskiego" />
                     </a>
                 </div>
             </div>
